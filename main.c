@@ -10,7 +10,7 @@ void add();
 void subtract();
 
 
-void main() {
+int main() {
 
     printWelcomeMenu();
 
@@ -30,6 +30,7 @@ void main() {
             subtract();
             break;
     }
+    return 0;
 }
 
 void printWelcomeMenu() {
