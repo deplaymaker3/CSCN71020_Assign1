@@ -7,7 +7,7 @@
 void printWelcomeMenu();
 void printOptions();
 void add();
-void subtract();
+void subtract(); // added the subtract function
 
 
 int main() {
@@ -26,11 +26,11 @@ int main() {
             add();
             break;
 
-        case 2:
+        case 2:  // Added case 2 to handle the newly implemented subtraction function
             subtract();
             break;
     }
-    return 0;
+    return 0;     // added return type to int and added return 0 to fix exit code 31 termination
 }
 
 void printWelcomeMenu() {
@@ -52,6 +52,7 @@ void add() {
     printf("Enter the second value:");
     scanf("%lf", &num2);
     result = num1 + num2;
+    //Changed format specifier to %.2lf to remove long decimal zeros
     printf("%.2lf + %.2lf = %.2lf\n", num1, num2, result);
 }
 
@@ -62,5 +63,8 @@ void subtract() {
     printf("Enter the second value:");
     scanf("%lf", &num2);
     result = num1 - num2;
+    //Changed format specifier to %.2lf to remove long decimal zeros
     printf("%.2lf - %.2lf = %.2lf\n", num1, num2, result);
 }
+
+// removed the clusters here
